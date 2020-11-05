@@ -11,7 +11,7 @@ pipeline {
     }
     stage('SAST for check sec/access keys in SCM'){
       steps{
-        sh 'docker run --rm gesellix/trufflehog -- json https://github.com/redashu/webdevsummer2020.git > myappbugs.txt'
+        sh 'docker run --rm gesellix/trufflehog -- json redashu/webdevsummer2020.git > myappbugs.txt'
         sh 'cat myappbugs.txt'
       }
     }
