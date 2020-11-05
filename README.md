@@ -1,4 +1,15 @@
-# oracle2112020devsecops
-## just testing build by fake commit 
+This is a sample Web Application to use during Continuous Integration demos.
 
-## one more fake commit
+#Build Instruction
+
+```
+mvn3 clean package
+```
+
+#Deploy instruction
+
+Deploy ```target/WebApp.war``` on Tomcat
+ 
+#TODO
+ 
+Add instruction to deploy to ElasticBeanstalk
