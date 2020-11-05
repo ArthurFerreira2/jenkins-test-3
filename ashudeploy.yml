@@ -28,3 +28,19 @@ spec:
         name: oracleweb
         resources: {}
 status: {}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: arthur-svc-1
+  namespace: arthur-space
+spec:
+  ports:
+  - name: webport
+    port: 2345
+    protocol: TCP
+    targetPort: 80
+  type: LoadBalancer
+  selector:
+    app: arthtmlapp
