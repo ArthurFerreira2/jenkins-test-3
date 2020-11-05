@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: ashuhtmlapp
-  name: ashuhtmlapp
+    app: arthtmlapp
+  name: arthtmlapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ashuhtmlapp
+      app: arthtmlapp
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: ashuhtmlapp
+        app: arthtmlapp
     spec:
       containers:
       - image: arthurferreira2/oracleweb:v2
