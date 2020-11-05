@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: ashuhtmlapp
+  name: ashuhtmlapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ashuhtmlapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ashuhtmlapp
+    spec:
+      containers:
+      - image: dockerashu/oracleweb:appv1
+        name: oracleweb
+        resources: {}
+status: {}

@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+ ashuweb1:
+  image: dockerashu/oracleweb:appv1
+  container_name: ashuwebcc11
+  ports:
+  - "7711:80"
