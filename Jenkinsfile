@@ -14,5 +14,10 @@ pipeline {
         sh 'mvn clean package'
       }
     }
+    stage('deploy war file in local docker engine'){
+      steps{
+        sh 'docker-compose down; docker-compose up -d'
+      }
+    }
   }
 }
