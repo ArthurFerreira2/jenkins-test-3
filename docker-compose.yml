@@ -1,7 +1,8 @@
-version: "3.8"
+version: "3.8" # latest version of Dockerfile
 services:
- ashuweb1:
-  image: arthur.ferreira2/oracleweb:v2
-  container_name: arthurc2
+ ashuwebapp1: # name of application 
+  image: dockerashu/oracleflask:v0011  # the same image we build in build step 
+  container_name: ashuxc111
   ports:
-  - "7711:80"
+  - "4411:5000"
+  
