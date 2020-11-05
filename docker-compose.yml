@@ -1,8 +1,10 @@
 version: "3.8" # latest version of Dockerfile
 services:
- ashuwebapp1: # name of application 
-  image: dockerashu/oracleflask:v0011  # the same image we build in build step 
-  container_name: ashuxc111
+ artjavawebapp1: # name of application 
+  image: tomcat  # the same image we build in build step 
+  container_name: artjavawebappc1
   ports:
-  - "4411:5000"
+  - "5512:8080"
+  volumes:
+  - "./jenkins-test-3-master/target:/usr/local/tomcat/webapp"
   
