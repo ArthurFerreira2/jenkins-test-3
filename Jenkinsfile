@@ -9,5 +9,10 @@ pipeline {
         sh 'mvm -v'
       }
     }
+    stage('building java project'){
+      steps{
+        sh 'mvm -clean package'
+      }
+    }
   }
 }
