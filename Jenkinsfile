@@ -6,12 +6,12 @@ pipeline {
   stages {
     stage('checking maven installation'){
       steps{
-        sh 'mvm -v'
+        sh 'mvn -v'
       }
     }
     stage('building java project'){
       steps{
-        sh 'mvm -clean package'
+        sh 'mvn -clean package'
       }
     }
   }
