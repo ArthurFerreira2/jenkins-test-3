@@ -1,7 +1,7 @@
 version: "3.8"
 services:
  ashuweb1:
-  image: arthur.ferreira2/oracleweb:v2
+  image: arthurferreira2/oracleweb:v2
   container_name: arthurc2
   ports:
   - "7711:80"
