@@ -1,3 +1,8 @@
+apiVersion: v1
+kind : Namespace
+metadata :
+  name: arthur-space
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -5,6 +10,7 @@ metadata:
   labels:
     app: arthtmlapp
   name: arthtmlapp
+  namespace: arthur-space
 spec:
   replicas: 1
   selector:
