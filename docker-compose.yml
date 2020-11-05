@@ -4,4 +4,4 @@ services:
   image: arthurferreira2/oracleweb:v2
   container_name: arthurc2
   ports:
-  - "7711:80"
+  - "7712:80"
