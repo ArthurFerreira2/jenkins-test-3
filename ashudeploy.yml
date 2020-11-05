@@ -18,7 +18,7 @@ spec:
         app: ashuhtmlapp
     spec:
       containers:
-      - image: dockerashu/oracleweb:appv1
+      - image: dockerashu/oracleweb:v1
         name: oracleweb
         resources: {}
 status: {}
