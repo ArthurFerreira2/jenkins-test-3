@@ -6,5 +6,5 @@ services:
   ports:
   - "5512:8080"
   volumes:
-  - "./jenkins-test-3-master/target:/usr/local/tomcat/webapp"
+  - "./target:/usr/local/tomcat/webapp"
   
